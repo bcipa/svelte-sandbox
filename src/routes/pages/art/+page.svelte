@@ -4,7 +4,7 @@
     import { DoubleSide, RepeatWrapping } from 'three';
     import { HTML, OrbitControls, Grid } from '@threlte/extras'
 
-    export let roomSize = 10;
+    export let roomSize = 20;
     
     $: roomOffset = roomSize / -2;
 </script>
@@ -12,7 +12,7 @@
 <Canvas >
     <T.PerspectiveCamera
             makeDefault
-            position={[roomSize / 2, roomSize / 2, roomSize / 2]}
+            position={[roomSize / 3, roomSize / 3, roomSize / 3]}
         >
         <OrbitControls />
     </T.PerspectiveCamera>
