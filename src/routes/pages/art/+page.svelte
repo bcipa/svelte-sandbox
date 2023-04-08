@@ -3,7 +3,7 @@
 	import { spring } from 'svelte/motion'
     import { DoubleSide } from 'three';
     import { degToRad } from 'three/src/math/MathUtils'
-    import { HTML } from '@threlte/extras'
+    // import { HTML } from '@threlte/extras'
 </script>
 
 <div class="h-full w-full">
@@ -29,17 +29,17 @@
             </T.Mesh>
             <T.Mesh let:ref>
                 <T.PlaneGeometry  />
-                <HTML>
+                <!-- <HTML>
                     <p class="text-2xl">BUY BUY BUY</p>
-                </HTML>
-                <!-- <T.MeshLambertMaterial
+                </HTML> -->
+                <T.MeshLambertMaterial
 						side={DoubleSide}
                         args={[
 							{
 								color: 0x3f7b9d,
 							}
 						]}
-					/> -->
+					/>
             </T.Mesh>
             <T.Mesh  rotation.x={-Math.PI / 2} position.y={-0.5} position.z={0.5} let:ref>
                 <T.PlaneGeometry  />
