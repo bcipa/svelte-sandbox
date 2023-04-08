@@ -10,8 +10,7 @@
 
 <!-- App Shell -->
 <AppShell>
-	<svelte:fragment slot="header">
-		<!-- App Bar -->
+	<!-- <svelte:fragment slot="header">
 		<AppBar>
 			<svelte:fragment slot="lead">
 				<strong class="text-xl uppercase">Ben Cipa</strong>
@@ -27,7 +26,7 @@
 				</a>
 			</svelte:fragment>
 		</AppBar>
-	</svelte:fragment>
+	</svelte:fragment> -->
 	<!-- Page Route Content -->
 	<slot />
 </AppShell>
